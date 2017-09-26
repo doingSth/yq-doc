@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>权限管理 - UNO页面配置平台</title>
+
+        <!-- <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet"> -->
+        <link href="../../css/page.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        
+
+<div id="header">
+    <a id="logo" href="../..">
+        <!-- <img src="../../img/logo.png"> -->
+        <span>UNO页面配置平台</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form" role="form">
+    <input type="text" placeholder="Search..." id="mkdocs-search-query-input" class="st-default-search-input" autocomplete="off" autocorrect="off" autocapitalize="off">
+  </form>
+</li>
+
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">认识uno</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../.." class="nav-link">uno简介</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/pc/" class="nav-link">运营活动流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/mobile/" class="nav-link">类微海报流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/channel/" class="nav-link">渠道配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/schema/" class="nav-link">虚拟组件描述</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/cmp/" class="nav-link">数据流</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/preview/" class="nav-link">实时预览</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/ci/" class="nav-link">页面构建</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../channel/" class="nav-link ">渠道申请</a></li>
+            
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">前端开发者手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../development/viewcmp/" class="nav-link">c端组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/formcmp/" class="nav-link">表单组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/register/" class="nav-link">c端组件注册</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/bid/" class="nav-link">组件Bid生成</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">运营使用手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../create/" class="nav-link">创建专题</a></li>
+    
+
+            
+                
+    
+    <li><a href="../edit/" class="nav-link">页面配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../publish/" class="nav-link">发布和链接</a></li>
+    
+
+            
+                
+    
+    <li><a href="./" class="nav-link">权限管理</a></li>
+    
+
+            
+                
+    
+    <li><a href="../template/" class="nav-link">标记模版</a></li>
+    
+
+            
+                
+    
+    <li><a href="../form/" class="nav-link">构建表单页面</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">第三方接入</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../third/pigeon/" class="nav-link">pigeon接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/http/" class="nav-link">http接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/package/" class="nav-link">package</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/ci/" class="nav-link">自定义ci</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/lego/" class="nav-link">lego接入技术方案</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../log/" class="nav-link ">项目迭代日志</a></li>
+            
+        
+    
+
+    </ul>
+</div>
+
+        
+            <div id="main" class="">
+                
+                    <div class="sidebar bs-sidebar">
+  <div class="list">
+    <ul class="nav menu-root">
+    
+        <li class="active">
+            <a href="#_1" class="sidebar-link">影响</a>
+        </li>
+        <ul class="menu-sub">
+        
+        </ul>
+    
+        <li class="">
+            <a href="#_2" class="sidebar-link">说明</a>
+        </li>
+        <ul class="menu-sub">
+        
+        </ul>
+    
+        <li class="">
+            <a href="#_3" class="sidebar-link">常用操作</a>
+        </li>
+        <ul class="menu-sub">
+        
+            <li>
+                <a href="#1" class="sidebar-link">1. 进入权限系统</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#2" class="sidebar-link">2. 申请某个资源的操作权限</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#3" class="sidebar-link">3. 申请成为某个资源的管理员</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#4" class="sidebar-link">4. 申请成为渠道管理员</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#5" class="sidebar-link">5. 申请添加新的渠道</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#6" class="sidebar-link">6. 批量添加权限</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#7" class="sidebar-link">7. 添加用户为资源管理员</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#8" class="sidebar-link">8. 添加资源类型</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#9" class="sidebar-link">9. 资源类型的操作权限增减</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+        </ul>
+    
+        <li class="">
+            <a href="#_4" class="sidebar-link">其他</a>
+        </li>
+        <ul class="menu-sub">
+        
+        </ul>
+    
+    </ul>
+  </div>
+</div>
+                    
+<div class="content guide with-sidebar">
+
+<h2 id="_1">影响</h2>
+<p>其他人无法更改你创建的页面 （在你未允许的情况下）
+<a href="http://uno.dianping.com/texas">地址</a></p>
+<h2 id="_2">说明</h2>
+<ol>
+<li>资源：资源指单个页面或者组件等，最小的权限控制单位。</li>
+<li>资源类型：资源所属的类型，比如页面（page），组件（component）。</li>
+<li>渠道：最高级别的资源划分单位，基本对应各个业务平台，注意不同渠道下面允许有同名的资源类型。</li>
+<li>资源操作权限：目前仅提供了修改、发布、删除三种权限，没有自定义操作权限的页面，其中修改权限对应页面基本信息，组件配置的保存操作；
+删除权限对应页面删除操作；发布权限对应页面发布操作。</li>
+<li>资源管理员：对某个资源有所有的操作权限，可以添加其他人为管理员，为其他人赋予自己名下的资源操作权限，或者删除操作；用户对资源的操作申请也将由相应的资源管理员处理。</li>
+<li>渠道管理员：渠道管理员对渠道的资源类型可以做增删改操作，处理渠道管理员申请，不具备对某个资源的操作权限。</li>
+</ol>
+<h2 id="_3">常用操作</h2>
+<h3 id="1">1. 进入权限系统</h3>
+<p>权限系统入口如下图：
+<img alt="进入权限系统入口" src="https://p1.meituan.net/dprainbow/231e8d51b11006db41da58310f1aee0085212.png" />
+或者直接访问链接：https://uno.dianping.com/texas#/ </p>
+<h3 id="2">2. 申请某个资源的操作权限</h3>
+<p>在资源列表中的每个资源的申请链接申请即可，该资源的管理员会收到通知处理你的申请，申请通过后即具有相应操作权限。</p>
+<h3 id="3">3. 申请成为某个资源的管理员</h3>
+<p>在每个资源的管理员部分的按钮申请，申请成功后自动获得该资源的所有操作权限。</p>
+<h3 id="4">4. 申请成为渠道管理员</h3>
+<p>该部分功能未在首页放置链接，请在浏览器中输入：http://uno.dianping.com/texas#/classList 在页面顶部有申请成为渠道管理员的按钮，选中渠道申请，渠道管理员会处理。</p>
+<h3 id="5">5. 申请添加新的渠道</h3>
+<p>该部分功能未在首页放置链接，请在浏览器中输入：http://uno.dianping.com/texas#/classList 点击申请添加新的渠道
+<img alt="申请添加新的渠道" src="https://p1.meituan.net/dprainbow/ca02b5d1899f4afa4278fe833df98c4376499.png" />
+渠道名称必须和已有的渠道名不冲突，添加其他管理员指除自己以外的管理员，申请人完成申请后默认为该渠道的管理员。该申请的处理人为：daxuan.she, yongqiang.shen</p>
+<h3 id="6">6. 批量添加权限</h3>
+<p>该功能对资源管理员开放，可同时对多位用户添加多种权限，点击确定后，添加用户中填写的所有用户将具有下面添加的操作中所有勾选的操作权限，如果给多人添加不同的操作权限，需要多次操作。
+<img alt="批量添加操作权限" src="https://p0.meituan.net/dprainbow/d2a91516dfb84b0bd1adb7d3e84b66d788633.png" /></p>
+<h3 id="7">7. 添加用户为资源管理员</h3>
+<p>该功能对资源管理员开放，添加新的管理员后，管理员默认拥有该资源所有操作权限。</p>
+<h3 id="8">8. 添加资源类型</h3>
+<p>该部分功能未在首页放置链接，请在浏览器中输入：uno.dianping.com/texas#/classList 点击添加资源类型，输入资源类型名称即可，将会添加在当前选择框选中的渠道下。</p>
+<h3 id="9">9. 资源类型的操作权限增减</h3>
+<p>该部分功能未在首页放置链接，请在浏览器中输入：uno.dianping.com/texas#/classList
+选中某个渠道，即可对渠道下的所有资源类型做增减操作，目前仅提供了发布、修改、删除三种操作，不可自定义。资源类型的操作权限限定了该类型下所有资源可以有的操作类型（目前该功能并没有体现出作用）。</p>
+<h2 id="_4">其他</h2>
+<ol>
+<li>用户发出申请后，会在大象上通知到对应的管理员。如果当前申请还未处理完，会提示已经申请，不会多次提醒管理员。</li>
+<li>需求、建议及其他问题可以联系：wangyi32，yongqiang.shen</li>
+</ol>
+
+
+<div class="guide-links">
+    
+  <span>← <a href="../publish/">发布和链接</a></span>
+    
+  
+  <span style="float:right"><a href="../template/">标记模版</a> →</span>
+  
+</div>
+
+
+</div>
+                
+            </div>
+        
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true" style="display:none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form" onsubmit="return false">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>lego接入技术方案 - UNO页面配置平台</title>
+
+        <!-- <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet"> -->
+        <link href="../../css/page.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        
+
+<div id="header">
+    <a id="logo" href="../..">
+        <!-- <img src="../../img/logo.png"> -->
+        <span>UNO页面配置平台</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form" role="form">
+    <input type="text" placeholder="Search..." id="mkdocs-search-query-input" class="st-default-search-input" autocomplete="off" autocorrect="off" autocapitalize="off">
+  </form>
+</li>
+
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">认识uno</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../.." class="nav-link">uno简介</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/pc/" class="nav-link">运营活动流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/mobile/" class="nav-link">类微海报流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/channel/" class="nav-link">渠道配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/schema/" class="nav-link">虚拟组件描述</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/cmp/" class="nav-link">数据流</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/preview/" class="nav-link">实时预览</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/ci/" class="nav-link">页面构建</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../channel/" class="nav-link ">渠道申请</a></li>
+            
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">前端开发者手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../development/viewcmp/" class="nav-link">c端组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/formcmp/" class="nav-link">表单组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/register/" class="nav-link">c端组件注册</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/bid/" class="nav-link">组件Bid生成</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">运营使用手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../operatordoc/create/" class="nav-link">创建专题</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/edit/" class="nav-link">页面配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/publish/" class="nav-link">发布和链接</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/power/" class="nav-link">权限管理</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/template/" class="nav-link">标记模版</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/form/" class="nav-link">构建表单页面</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">第三方接入</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../pigeon/" class="nav-link">pigeon接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../http/" class="nav-link">http接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../package/" class="nav-link">package</a></li>
+    
+
+            
+                
+    
+    <li><a href="../ci/" class="nav-link">自定义ci</a></li>
+    
+
+            
+                
+    
+    <li><a href="./" class="nav-link">lego接入技术方案</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../log/" class="nav-link ">项目迭代日志</a></li>
+            
+        
+    
+
+    </ul>
+</div>
+
+        
+            <div id="main" class="">
+                
+                    <div class="sidebar bs-sidebar">
+  <div class="list">
+    <ul class="nav menu-root">
+    
+        <li class="active">
+            <a href="#lego-x-unoslaps" class="sidebar-link">Lego x Uno(Slaps)</a>
+        </li>
+        <ul class="menu-sub">
+        
+            <li>
+                <a href="#_1" class="sidebar-link">介绍</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_2" class="sidebar-link">实现技术介绍</a>
+                <ul class="menu-sub">
+                
+                  <li><a class="section-link" href="#_3">组件</a></li>
+                
+                  <li><a class="section-link" href="#_4">页面预览</a></li>
+                
+                  <li><a class="section-link" href="#_5">页面发布</a></li>
+                
+                </ul>
+            </li>
+        
+        </ul>
+    
+    </ul>
+  </div>
+</div>
+                    
+<div class="content guide with-sidebar">
+
+<h1 id="lego-x-unoslaps">Lego x Uno(Slaps)</h1>
+<p>目前Uno已经接入了Lego，可以通过开发Lego组件，通过SSR的方式来进行页面的拼接。</p>
+<h2 id="_1">介绍</h2>
+<p>目前，拼团业务已经先采用了这种渲染方式。
+这是对应的<a href="http://docs.sankuai.com/doc/gfe_dp/slaps-doc/">Slaps配置文档</a>。</p>
+<h2 id="_2">实现技术介绍</h2>
+<p>在Uno中，主要分为页面与组件两个级别，这种思想与Lego的开发思路完全相同，所以这就给了我们理论上适配的可能。同时，在Uno中，页面分为预览和发布两个阶段。以下，我们将介绍一下在具体的发布流程中，我们的技术实现。
+如图：
+<img alt="" src="https://p1.meituan.net/dpnewvc/1aca663f252d757d3bc3a452fc8ae538157375.jpg" /></p>
+<h3 id="_3">组件</h3>
+<p>在开发组件的代码时，其实和开发Lego的组件完全相同，不同的是组件在通过ci或者rollout的发布的流程。
+打包的过程中，会同时发布静态资源和服务端两个组件包。</p>
+<ul>
+<li>
+<p>静态资源</p>
+<p>用以发布用以预览的静态资源包</p>
+</li>
+<li>
+<p>服务端</p>
+<p>上传到s3，当Node服务器在打包的时候会进行下载</p>
+</li>
+</ul>
+<p>组件的配置，直接复用Uno现有的彩虹配置系统。</p>
+<h3 id="_4">页面预览</h3>
+<p>预览分为两个关键的节点，分别是打开和组件配置的更新。</p>
+<p>打开页面的时候，目前会通过Post请求打开页面，会携带<code>versionConfig</code>和<code>schema</code>等字段，让预览页面知道当前有哪些组件与组件对应的配置，从而生成页面。同时，这个页面<code>Lego</code>降级在前端渲染，引用前端组件的standalone资源生成的。</p>
+<p>组件配置的更新实现是通过接受Uno页面发过来的postMessage，然后分发到对应组件进行实时更新操作。实时更新操作是我们在打包静态资源的standalone的过程中，自动引入了<code>Slaps</code>的热更新组件<code>@gfe/slaps-hotupdate-middleware</code>完成的，对开发者透明。</p>
+<h3 id="_5">页面发布</h3>
+<p>我们的页面发布分为多个流程。</p>
+<p>如图：</p>
+<h4 id="uno">原有Uno流程</h4>
+<p>原有Uno的流程包括申请灵犀pageId，生成静态资源等。我们在执行完这些流程后，还需要记录当前的构建参数。不同于原有的Uno流程生成页面，我们的页面是通过Node端渲染生成的。那么，其实我们的场景是<code>分布式</code>的，那么我们需要一个能够记录这些内容的地方。<code>Redis</code>是一个不错的选择。</p>
+<h4 id="_6">打包部署</h4>
+<p>在执行完原有的Uno流程后，我们还需要执行新的Lego项目独有的打包部署流程。
+其中，在打包时，我们会去访问当前业务类型下所有的页面，然后计算出所有的模块，从S3上进行下载，从而加入Node.js的文件中，作为Node.js启动时的组件池。
+这么做的原因是，因为Node默认依赖Npm进行管理，而Npm中的同一个包在同一个项目时只能有一个版本。然而，在我们的场景中，一个项目是会存在多个版本，因为会同时支持多种页面，应该展示的是页面生成时候的版本。所以，我们通过s3完成了一个简单的<code>组件池</code>。
+打好包后，我们会通过code同学提供的几个api完成自动部署，从而让打包的逻辑内聚在code同学这里。</p>
+
+
+<div class="guide-links">
+    
+  <span>← <a href="../ci/">自定义ci</a></span>
+    
+  
+  <span style="float:right"><a href="../../log/">项目迭代日志</a> →</span>
+  
+</div>
+
+
+</div>
+                
+            </div>
+        
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true" style="display:none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form" onsubmit="return false">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

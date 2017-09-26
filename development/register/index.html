@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>c端组件注册 - UNO页面配置平台</title>
+
+        <!-- <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet"> -->
+        <link href="../../css/page.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        
+
+<div id="header">
+    <a id="logo" href="../..">
+        <!-- <img src="../../img/logo.png"> -->
+        <span>UNO页面配置平台</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form" role="form">
+    <input type="text" placeholder="Search..." id="mkdocs-search-query-input" class="st-default-search-input" autocomplete="off" autocorrect="off" autocapitalize="off">
+  </form>
+</li>
+
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">认识uno</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../.." class="nav-link">uno简介</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/pc/" class="nav-link">运营活动流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/mobile/" class="nav-link">类微海报流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/channel/" class="nav-link">渠道配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/schema/" class="nav-link">虚拟组件描述</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/cmp/" class="nav-link">数据流</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/preview/" class="nav-link">实时预览</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/ci/" class="nav-link">页面构建</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../channel/" class="nav-link ">渠道申请</a></li>
+            
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">前端开发者手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../viewcmp/" class="nav-link">c端组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../formcmp/" class="nav-link">表单组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="./" class="nav-link">c端组件注册</a></li>
+    
+
+            
+                
+    
+    <li><a href="../bid/" class="nav-link">组件Bid生成</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">运营使用手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../operatordoc/create/" class="nav-link">创建专题</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/edit/" class="nav-link">页面配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/publish/" class="nav-link">发布和链接</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/power/" class="nav-link">权限管理</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/template/" class="nav-link">标记模版</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/form/" class="nav-link">构建表单页面</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">第三方接入</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../third/pigeon/" class="nav-link">pigeon接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/http/" class="nav-link">http接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/package/" class="nav-link">package</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/ci/" class="nav-link">自定义ci</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../third/lego/" class="nav-link">lego接入技术方案</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../log/" class="nav-link ">项目迭代日志</a></li>
+            
+        
+    
+
+    </ul>
+</div>
+
+        
+            <div id="main" class="">
+                
+                    <div class="sidebar bs-sidebar">
+  <div class="list">
+    <ul class="nav menu-root">
+    
+        <li class="active">
+            <a href="#_1" class="sidebar-link">组件注册</a>
+        </li>
+        <ul class="menu-sub">
+        
+            <li>
+                <a href="#_2" class="sidebar-link">第一步：进入到组件注册页面，添加新组件</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_3" class="sidebar-link">第二步：完善组件基本信息</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_4" class="sidebar-link">第三步：快速生成组件配置</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_5" class="sidebar-link">第四步：完善组件配置信息</a>
+                <ul class="menu-sub">
+                
+                  <li><a class="section-link" href="#cmpobj">组件配置项（cmpObj）</a></li>
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_6" class="sidebar-link">第五步：保存</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+        </ul>
+    
+        <li class="">
+            <a href="#_7" class="sidebar-link">测试和上线</a>
+        </li>
+        <ul class="menu-sub">
+        
+            <li>
+                <a href="#_8" class="sidebar-link">测试</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_9" class="sidebar-link">上线</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+        </ul>
+    
+        <li class="">
+            <a href="#_10" class="sidebar-link">组件更新</a>
+        </li>
+        <ul class="menu-sub">
+        
+            <li>
+                <a href="#_11" class="sidebar-link">配置项更新</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_12" class="sidebar-link">非配置项更新</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_13" class="sidebar-link">活动页中组件版本升级</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+        </ul>
+    
+        <li class="">
+            <a href="#_14" class="sidebar-link">参考文档</a>
+        </li>
+        <ul class="menu-sub">
+        
+        </ul>
+    
+    </ul>
+  </div>
+</div>
+                    
+<div class="content guide with-sidebar">
+
+<h2 id="_1">组件注册</h2>
+<p>beta: uno.51ping.com  域账号 密码：Ceshi123</p>
+<p>线上: uno.dianping.com 域账号</p>
+<h3 id="_2">第一步：进入到组件注册页面，添加新组件</h3>
+<p><img alt="添加新组件" src="https://p1.meituan.net/dprainbow/d24a574d0877c4215efd10b4822036f8447787.png" /></p>
+<h3 id="_3">第二步：完善组件基本信息</h3>
+<p>在上一步添加新组件后会出现如下图所示弹框，组件基本信息中包含如下配置项：</p>
+<ul>
+<li>
+<p><code>组件名字</code>：必填选项，这是你的组件注册后在组件列表中显示的名字。</p>
+</li>
+<li>
+<p><code>业务</code>：必填选项，用于区分不同的业务来源（渠道）。</p>
+</li>
+<li>
+<p><code>组件类型</code>：区分组件功能（你的组件之后会放在对应的分类下面）。</p>
+</li>
+<li>
+<p><code>适用平台</code>：组件支持的平台类型。适用于点评平台的组件只能用于拼接点评平台侧的页面，适用于美团平台的组件只能用于拼接美团平台侧的页面。</p>
+</li>
+</ul>
+<p>基本信息填写完成之后点击<code>确定</code>按钮。</p>
+<p><img alt="组件基本信息" src="http://p1.meituan.net/dprainbow/1d2a9da631b8e120fb2c6d1ebcd4c78592345.jpg" /></p>
+<h3 id="_4">第三步：快速生成组件配置</h3>
+<p><img alt="快速生成组件配置" src="https://p1.meituan.net/dprainbow/85f6fb0da10e5aa21f467bf2487edd59215814.png" /></p>
+<h3 id="_5">第四步：完善组件配置信息</h3>
+<p>快速生成配置项后:</p>
+<p>1.参照<a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=632628782">组件配置项说明</a>更改下具体props的format</p>
+<p>2.更改required值，标示必填项</p>
+<p><img alt="组件配置信息" src="https://p1.meituan.net/dprainbow/86faa8dc8ee050ed2768e97fe40e77e1308466.png" /></p>
+<h4 id="cmpobj">组件配置项（<code>cmpObj</code>）</h4>
+<ul>
+<li><code>cmpObj</code> </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>键名</th>
+<th>值类型</th>
+<th>是否必填</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>String</code></td>
+<td>是</td>
+<td>组件的npm包名，uno就是根据这个包名来拉npm仓库中的代码，所以name的值一定要填写正确</td>
+</tr>
+<tr>
+<td><code>slots</code></td>
+<td><code>List</code></td>
+<td>否</td>
+<td>组件内部插槽的信息，由于一个组件内部可能有多个插槽，所以slots是个列表类型的值，其中每一个列表项为一个插槽的配置项描述，详情见<code>slotsListObj</code></td>
+</tr>
+<tr>
+<td><code>schema</code></td>
+<td><code>Object</code></td>
+<td>否</td>
+<td>组件开放给运营的配置项，详情见 <code>schemaObj</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>slotsListObj</code> </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>键名</th>
+<th>值类型</th>
+<th>是否必填</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>String</code></td>
+<td>是</td>
+<td>你在组件中预留插槽name属性的值，例如你组件模版中预留了：<code>&lt;slot name='rule'&gt;&lt;/slot&gt;</code>,那么name的值就填写为<code>rule</code></td>
+</tr>
+<tr>
+<td><code>cards</code></td>
+<td><code>List</code></td>
+<td>是</td>
+<td>插槽组件列表，每一项为一个插槽组件的组件配置项（见<code>cmpObj</code>），取代了旧流程中配置组件块的步骤</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>schemaObj</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>键名</th>
+<th>值类型</th>
+<th>是否必填</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td><code>String</code></td>
+<td>是</td>
+<td>你组件项目的中文名字，可以和组件基本信息中的组件名字相同</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td><code>Object</code></td>
+<td>是</td>
+<td>一个组件所开放的配置项是一个对象类型</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>String</code></td>
+<td>否</td>
+<td>组件的具体描述</td>
+</tr>
+<tr>
+<td><code>properties</code></td>
+<td><code>Object</code></td>
+<td>是</td>
+<td>组件所开放的配置项，具体配置规则参考文档：<a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=632628782">组件配置项说明</a></td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td><code>List</code></td>
+<td>否</td>
+<td>配置项（<code>properties</code>）中的必填项</td>
+</tr>
+<tr>
+<td><code>hide</code></td>
+<td><code>Boolean</code></td>
+<td>否</td>
+<td>是否隐藏配置项，默认为否。（隐藏是指将配置项折叠，运营同学需要展开后才能看到相应配置项，所以如果包含有必填配置项建议不要隐藏，因为运营同学在配置时经常会漏掉）</td>
+</tr>
+</tbody>
+</table>
+<p>组件配置的样例如下图所示：</p>
+<p><img alt="组件配置" src="http://p0.meituan.net/dprainbow/0ab4264a424da634ee891fc24bd890d9102070.jpg" /></p>
+<h3 id="_6">第五步：保存</h3>
+<p>在完成以上所有的配置之后，点击右上角的保存按钮，保存成功之后你的组件就成功完成注册，现在你就可以去uno beta环境（<a href="http://uno.51ping.com/#/">uno beta</a>）中对你的组件进行测试了。</p>
+<p><img alt="保存配置" src="http://p0.meituan.net/dprainbow/ca9ea9c687c976fd175772c81be591a8439646.jpg" /></p>
+<h2 id="_7">测试和上线</h2>
+<h3 id="_8">测试</h3>
+<p>此步骤对开发同学来讲为非必须步骤。具体流程请参考文档<a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=913935010">组件测试流程</a></p>
+<h3 id="_9">上线</h3>
+<p>测试完成之后如果要上线组件，那首先进入到组件注册页面地址： <a href="http://uno.51ping.com/view/index#/component">组件注册地址</a>，找到你之前注册的组件，然后点击右上角的同步上线按钮，将你的组件同步到线上环境（<a href="http://uno.dianping.com/#/">uno 线上</a>）。<strong>上线之前请确保你的组件项目已经发布到线上环境中</strong>。
+<img alt="上线" src="http://p1.meituan.net/dprainbow/c27b70a59be55df678d28aadbe263da8212244.jpg" /></p>
+<h2 id="_10">组件更新</h2>
+<h3 id="_11">配置项更新</h3>
+<p>在组件注册或者上线之后如果需要更新组件的配置项，那么只需要在之前组件注册的界面中直接对配置文件进行修改。修改完成之后，点击右上角的<code>保存</code>按钮更新uno<code>btea</code>环境中的配置项；如果同时需要更新线上环境的组件配置，那么依次点击<code>保存</code>和<code>同步到线上</code>按钮。</p>
+<p><img alt="更新配置项" src="https://p0.meituan.net/dpnewvc/dba7fa48a9cef540a589eb9262e82c2d567102.jpg" /></p>
+<h3 id="_12">非配置项更新</h3>
+<p>如果你对你的组件项目进行了版本升级但是并不需要对组件配置项进行更新，那么请在不同的环境中（<code>beta环境</code>和<code>线上环境</code>）发布你的代码。即如果你需要在uno beta环境中使用新的代码版本，那么请确认已在<code>beta环境</code>中发布了最新版本的代码；如果你想在线上环境中使用新的代码版本，那么请确认已经在<code>线上环境</code>中发布了最新版本的代码。</p>
+<h3 id="_13">活动页中组件版本升级</h3>
+<p><code>uno</code>平台是通过组件拼接的方式来生成页面，为了保证线上活动页面的稳定性，<code>uno</code>会将每个活动页使用到的组件的版本固化。组件第一次被添加时<code>uno</code>会记录它的最新版本，如果不手动升级组件版本，那之后的每次发布都会使用这个版本。如果开发人员对组件版本升级，并且想在一个旧的活动（即活动创建的时间要早于最新版本发布的时间）中使用最新版本，那么就需要在活动页中手动对组件进行升级。步骤如下：</p>
+<ol>
+<li>打开活动页，选中想要升级的组件。</li>
+<li>点击右上角的更新组件。</li>
+<li>依次点击保存、发布。</li>
+</ol>
+<p><img alt="组件版本更新" src="https://p1.meituan.net/dpnewvc/ffd7db5d6c8387e499911fbd42daf1ce324111.jpg" /></p>
+<h2 id="_14">参考文档</h2>
+<ol>
+<li><a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=557659302">uno前端开发文档</a>：这是一个一级目录，里面有很多大家可以参考的文档。</li>
+<li><a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=556192976">uno组件开发文档</a>：这是开发一个uno平台组件的开发者指南，里面涉及到包括脚手架、插件、日志、打点等内容。</li>
+<li><a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=604510184">常用组件</a>： 这里介绍了几种常用组件以及可能遇到的坑（就是介绍的比较少）。</li>
+<li><a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=836032279">彩虹活动页打点</a>：（目前彩虹活动页面的打点介绍）。</li>
+<li><a href="https://wiki.sankuai.com/pages/viewpage.action?pageId=632628782">组件配置项说明</a>：组件配置项书写指南。</li>
+</ol>
+
+
+<div class="guide-links">
+    
+  <span>← <a href="../formcmp/">表单组件开发</a></span>
+    
+  
+  <span style="float:right"><a href="../bid/">组件Bid生成</a> →</span>
+  
+</div>
+
+
+</div>
+                
+            </div>
+        
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true" style="display:none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form" onsubmit="return false">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

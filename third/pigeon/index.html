@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>pigeon接口 - UNO页面配置平台</title>
+
+        <!-- <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet"> -->
+        <link href="../../css/page.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        
+
+<div id="header">
+    <a id="logo" href="../..">
+        <!-- <img src="../../img/logo.png"> -->
+        <span>UNO页面配置平台</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form" role="form">
+    <input type="text" placeholder="Search..." id="mkdocs-search-query-input" class="st-default-search-input" autocomplete="off" autocorrect="off" autocapitalize="off">
+  </form>
+</li>
+
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">认识uno</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../.." class="nav-link">uno简介</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/pc/" class="nav-link">运营活动流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/mobile/" class="nav-link">类微海报流程</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/channel/" class="nav-link">渠道配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/schema/" class="nav-link">虚拟组件描述</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/cmp/" class="nav-link">数据流</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/preview/" class="nav-link">实时预览</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../uno/ci/" class="nav-link">页面构建</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../channel/" class="nav-link ">渠道申请</a></li>
+            
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">前端开发者手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../development/viewcmp/" class="nav-link">c端组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/formcmp/" class="nav-link">表单组件开发</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/register/" class="nav-link">c端组件注册</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../development/bid/" class="nav-link">组件Bid生成</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">运营使用手册</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="../../operatordoc/create/" class="nav-link">创建专题</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/edit/" class="nav-link">页面配置</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/publish/" class="nav-link">发布和链接</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/power/" class="nav-link">权限管理</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/template/" class="nav-link">标记模版</a></li>
+    
+
+            
+                
+    
+    <li><a href="../../operatordoc/form/" class="nav-link">构建表单页面</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+        <li class="nav-dropdown-container">
+          <a class="nav-link">第三方接入</a><span class="arrow"></span>
+          <ul class="nav-dropdown">
+            
+                
+    
+    <li><a href="./" class="nav-link">pigeon接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../http/" class="nav-link">http接口</a></li>
+    
+
+            
+                
+    
+    <li><a href="../package/" class="nav-link">package</a></li>
+    
+
+            
+                
+    
+    <li><a href="../ci/" class="nav-link">自定义ci</a></li>
+    
+
+            
+                
+    
+    <li><a href="../lego/" class="nav-link">lego接入技术方案</a></li>
+    
+
+            
+          </ul>
+        </li>
+
+        
+    
+        
+            
+            <li><a href="../../log/" class="nav-link ">项目迭代日志</a></li>
+            
+        
+    
+
+    </ul>
+</div>
+
+        
+            <div id="main" class="">
+                
+                    <div class="sidebar bs-sidebar">
+  <div class="list">
+    <ul class="nav menu-root">
+    
+        <li class="active">
+            <a href="#pegion" class="sidebar-link">pegion接口</a>
+        </li>
+        <ul class="menu-sub">
+        
+            <li>
+                <a href="#maven" class="sidebar-link">maven依赖</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#bean" class="sidebar-link">bean配置</a>
+                <ul class="menu-sub">
+                
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#_1" class="sidebar-link">接口</a>
+                <ul class="menu-sub">
+                
+                  <li><a class="section-link" href="#gmktunocommonservice">GmktUnoCommonService</a></li>
+                
+                  <li><a class="section-link" href="#gmktunotemplateservice">GmktUnoTemplateService</a></li>
+                
+                </ul>
+            </li>
+        
+        </ul>
+    
+    </ul>
+  </div>
+</div>
+                    
+<div class="content guide with-sidebar">
+
+<h1 id="pegion">pegion接口</h1>
+<h3 id="maven">maven依赖</h3>
+<pre><code>&lt;dependency&gt;
+ &lt;groupId&gt;com.dianping.gmkt&lt;/groupId&gt;
+ &lt;artifactId&gt;gmkt-uno-api&lt;/artifactId&gt;
+ &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<h3 id="bean">bean配置</h3>
+<pre><code>&lt;!--UNO通用服务--&gt;
+&lt;bean id=&quot;unoCommonService&quot; class=&quot;com.dianping.pigeon.remoting.invoker.config.spring.ReferenceBean&quot; init-method=&quot;init&quot;&gt;
+ &lt;property name=&quot;url&quot; value=&quot;http://service.dianping.com/gmktUnoService/unoCommonService_1.0.0&quot; /&gt;
+ &lt;property name=&quot;interfaceName&quot; value=&quot;com.dianping.gmkt.uno.api.service.GmktUnoCommonService&quot; /&gt;
+ &lt;property name=&quot;timeout&quot; value=&quot;2000&quot; /&gt;
+&lt;/bean&gt;
+
+&lt;!--UNO模板服务--&gt;
+&lt;bean id=&quot;unoTemplateService&quot; class=&quot;com.dianping.pigeon.remoting.invoker.config.spring.ReferenceBean&quot; init-method=&quot;init&quot;&gt;
+ &lt;property name=&quot;url&quot; value=&quot;http://service.dianping.com/gmktUnoService/unoTemplateService_1.0.0&quot; /&gt;
+ &lt;property name=&quot;interfaceName&quot; value=&quot;com.dianping.gmkt.uno.api.service.GmktUnoTemplateService&quot; /&gt;
+ &lt;property name=&quot;timeout&quot; value=&quot;2000&quot; /&gt;
+&lt;/bean&gt;
+</code></pre>
+
+<h3 id="_1">接口</h3>
+<h4 id="gmktunocommonservice">GmktUnoCommonService</h4>
+<pre><code>/**
+ * 根据topicId获取uno专题详细信息
+ * @param topicId
+ * @return
+ */
+GmktUnoResponse&lt;UnoPage&gt; getPage(Integer topicId);
+
+/**
+ * 根据topicIds 获取uno专题详细信息
+ * 最大查询数量 60
+ * @param topicId
+ * @return
+ */
+GmktUnoResponse&lt;Map&lt;Integer, UnoPage&gt;&gt; getPages(List&lt;Integer&gt; topicId);
+
+/**
+ * 根据topicId删除uno专题页
+ * @param topicId
+ * @return
+ */
+GmktUnoResponse&lt;Integer&gt; deletePage(Integer topicId);
+
+/**
+ * 根据topicId获取cid
+ * @param topicId
+ * @return
+ */
+GmktUnoResponse&lt;String&gt; getCid(Integer topicId);
+</code></pre>
+
+<h4 id="gmktunotemplateservice">GmktUnoTemplateService</h4>
+<pre><code>/**
+ * 根据模板ids 获取uno专题模板详细信息
+ * 最大查询数量 lion:{gmkt-uno-service.unoTemplates.querySizeLimit} 60
+ * @param ids
+ * @return
+ */
+GmktUnoResponse&lt;Map&lt;Integer, UnoTemplate&gt;&gt; getTemplates(List&lt;Integer&gt; ids);
+
+/**
+ * 查询符合条件的uno专题模板列表
+ * 根据 businessKey 和 statusList查询
+ * @param request
+ * @return
+ */
+GmktUnoResponse&lt;UnoCMPagination&lt;List&lt;UnoTemplate&gt;&gt;&gt; findTemplateList(UnoTemplateListReq request);
+
+</code></pre>
+
+
+<div class="guide-links">
+    
+  <span>← <a href="../../operatordoc/form/">构建表单页面</a></span>
+    
+  
+  <span style="float:right"><a href="../http/">http接口</a> →</span>
+  
+</div>
+
+
+</div>
+                
+            </div>
+        
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true" style="display:none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form" onsubmit="return false">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
